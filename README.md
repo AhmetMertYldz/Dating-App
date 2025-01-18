@@ -211,6 +211,14 @@ print(performance_df)
 
 ```
 
+Aşağıda, uygulanan algoritmaların performans karşılaştırması verilmiştir:
+
+| Model  | Doğruluk  | Precision | Recall | F-1 Score  |
+|---------------------|--------|----------|-------|---|
+| LogisticRegression| 0.83|  0.819459  | 0.83  |  0.823581 |
+| DecisionTreeClassifier | 0.87 |  0.875038 | 0.87   | 0.872125  |
+| Random Forest      | 0.90 |  0.900952  | 0.90  |    0.894438  |
+
 
 Her bir model için elde edilen metrikler bir tabloya dökülmüş ve karşılaştırılmıştır. Modelin doğruluğunu artırmak için çeşitli parametre ayarlamaları ve hiperparametre optimizasyonları yapılabilir.
 
