@@ -67,6 +67,8 @@ for column in columns_to_encode:
     data[f'{column}_encoded'] = le.fit_transform(data[column])
 
 ```
+
+![1](image/1.PNG)
 ### Grafikler:
 - **Histogramlar:** Verilerin dağılımı ve özelliklerin temel istatistikleri görselleştirilmiştir.
 ``` python
@@ -74,6 +76,8 @@ data.hist(bins=15, figsize=(17,17))
 plt.suptitle("histogram diyagramı")
 plt.show()
 ```
+![2](image/2.PNG)
+![3](image/3.PNG)
 
 - **Korelasyon Matrisi:** Öznitelikler arasındaki ilişkiler görselleştirilmiş ve hangi özelliklerin hedef değişken ile daha fazla ilişkili olduğu belirlenmiştir.
 ``` python
@@ -91,6 +95,7 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=0.5)
 plt.title("Korelasyon Matrisi")
 plt.show()
 ```
+![4](image/4.PNG)
 
 - **Korelasyon Analizi:** Öznitelikler arasındaki korelasyon incelenmiş ve korelasyon matrisleri görselleştirilmiştir. Bu sayede modelin hangi öznitelikler üzerinden daha doğru tahminler yapabileceği hakkında bilgi edinilmiştir.
 
@@ -121,6 +126,7 @@ print("LogisticRegression - Precision:", precision_score(y_test, y_pred, average
 print("LogisticRegression - Recall:", recall_score(y_test, y_pred, average='weighted', zero_division=0))
 print("LogisticRegression - F1-score:", f1_score(y_test, y_pred, average='weighted', zero_division=0))
 ```
+![5](image/5.PNG)
 
 - **Karar Ağacı (Decision Tree):** Karar verme süreçlerini görselleştirip daha kolay yorumlanabilir sonuçlar elde etmek için kullanılmıştır.
 ``` python
@@ -146,6 +152,7 @@ print("DecisionTreeClassifier - Recall:", recall_score(y_test, y_pred_dt, averag
 print("DecisionTreeClassifier - F1-score:", f1_score(y_test, y_pred_dt, average='weighted'))
 
 ```
+![6](image/6.PNG)
 - **Random Forest:** Birden fazla karar ağacının birleşiminden oluşan bu algoritma, modelin doğruluğunu artırmak için kullanılmıştır.
 
 ``` python
@@ -167,7 +174,7 @@ print("RandomForestClassifier - Recall:", recall_score(y_test, y_pred_rf, averag
 print("RandomForestClassifier - F1-score:", f1_score(y_test, y_pred_rf, average='weighted'))
 
 ```
-  
+  ![7](image/7.PNG)
 Her bir model, `train_test_split` fonksiyonu ile eğitim ve test verilerine ayrılmıştır. Model doğruluğu ve diğer metrikler (precision, recall, F1-score) her bir algoritma için hesaplanmış ve karşılaştırılmıştır.
 
 ## 4) Performans Değerlendirme ve Sonuç Analizi
