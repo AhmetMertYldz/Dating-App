@@ -120,7 +120,7 @@ lr.fit(X_train, y_train)
 # Modeli değerlendirme
 y_pred = lr.predict(X_test)
 accuracy = (y_pred == y_test).mean()
-print(f'Model Doğruluğu: {accuracy+0.5:.2f}')
+print(f'Model Doğruluğu: {accuracy:.2f}')
 # Lojistik Regresyon için metriklerin hesaplanması
 print("LogisticRegression - Precision:", precision_score(y_test, y_pred, average='weighted', zero_division=0))
 print("LogisticRegression - Recall:", recall_score(y_test, y_pred, average='weighted', zero_division=0))
@@ -145,7 +145,7 @@ dt.fit(X_train, y_train)
 y_pred_dt = dt.predict(X_test)
 
 accuracy = (y_pred_dt == y_test).mean()
-print(f'Model Doğruluğu: {accuracy+0.45:.2f}')
+print(f'Model Doğruluğu: {accuracy:.2f}')
 # DecisionTreeClassifier için metriklerin hesaplanması
 print("DecisionTreeClassifier - Precision:", precision_score(y_test, y_pred_dt, average='weighted'))
 print("DecisionTreeClassifier - Recall:", recall_score(y_test, y_pred_dt, average='weighted'))
@@ -167,7 +167,7 @@ rf = RandomForestClassifier()
 rf.fit(X_train, y_train)
 y_pred_rf = rf.predict(X_test)
 accuracy = (y_pred_rf == y_test).mean()
-print(f'Model Doğruluğu: {accuracy+0.54:.2f}')
+print(f'Model Doğruluğu: {accuracy:.2f}')
 # RandomForestClassifier için metriklerin hesaplanması
 print("RandomForestClassifier - Precision:", precision_score(y_test, y_pred_rf, average='weighted'))
 print("RandomForestClassifier - Recall:", recall_score(y_test, y_pred_rf, average='weighted'))
