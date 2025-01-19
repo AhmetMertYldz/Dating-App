@@ -246,4 +246,6 @@ Projenin genel başarısı, doğru veri işleme, modelleme ve performans değerl
 ## Projeye Katkı:
 Bu proje, kullanıcıların flört uygulamalarındaki davranışları anlamak ve tahminlerde bulunmak için makine öğrenmesi yöntemlerinin nasıl kullanılacağını göstermektedir.
 
+Video : [Date_App](https://www.youtube.com/watch?v=gM_7pOL276Y)
+
 
